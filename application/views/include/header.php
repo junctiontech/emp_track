@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/neon-forms.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/js/dropzone/dropzone.css">
+	<link rel="shortcut icon" href="<?=base_url();?>assets/images/junctionerplogo.png">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/skins/black.css">
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
 
