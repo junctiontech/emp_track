@@ -44,15 +44,31 @@
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
+if($_SERVER['HTTP_HOST']=="localhost"){
+	$password="";
+	$username="root";
+}
 
+if($_SERVER['HTTP_HOST']=="emp_track.junctiontech.in"){
+	$password="";
+	$username="";
+}
+if($_SERVER['HTTP_HOST']=="www.emp_track.junctiontech.in"){
+	$password="";
+	$username="";
+}
+if($_SERVER['HTTP_HOST']=="192.168.1.151"){
+	$password="";
+	$username="";
+}
 $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'bitnami';
-$db['default']['database'] = 'rohit_sms';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['username'] = $username;
+$db['default']['password'] = $password;
+$db['default']['database'] = 'sor';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

@@ -14,7 +14,17 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '/emp_track/';
+if($_SERVER['HTTP_HOST']=="localhost"){
+	$port=$_SERVER['SERVER_PORT'];
+$config['base_url']	= "http://localhost/emp_track/";
+}elseif($_SERVER['HTTP_HOST']=="www.emp_track.junctiontech.in"){
+$config['base_url']	= 'http://emp_track.junctiontech.in/';	
+}elseif($_SERVER['HTTP_HOST']=="emp_track.junctiontech.in"){
+	
+$config['base_url']	= 'http://emp_track.junctiontech.in/';	
+}elseif($_SERVER['HTTP_HOST']=="192.168.1.151"){
+	$config['base_url']	= 'http://192.168.1.151/emp_track/';
+}
 
 /*
 |--------------------------------------------------------------------------
